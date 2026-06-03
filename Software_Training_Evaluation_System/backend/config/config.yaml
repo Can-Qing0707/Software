@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 740725
+  dbname: training_eval_system
+  charset: utf8mb4
+
+jwt:
+  secret: ""
+  expire_hours: 72
+
+llm:
+  provider: openai
+  api_url: https://api.openai.com/v1
+  api_key: ""
+  model: gpt-4o
+  max_tokens: 4096
+  temperature: 0.3
+
+upload:
+  dir: ./uploads
+  max_size: 50
